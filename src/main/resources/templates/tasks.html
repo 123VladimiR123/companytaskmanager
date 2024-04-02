@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+                <span th:text="|Профиль|"></span>
+            </a>
+            <a th:href="@{/}">
+                <span th:text="|Лента|"></span>
+            </a>
+            <a th:href="@{|/tasks|}">
+                <span th:text="|Задачи|"></span>
+            </a>
+            <a th:href="@{|/users|}">
+                <span th:text="|Сотрудники|"></span>
+            </a>
+            <a th:href="@{|/departments|}">
+                <span th:text="|Отделы|"></span>
+            </a>
+            <a th:href="@{|/files|}">
+                <span th:text="|Файлы|"></span>
+            </a>
+            <form method="get">
+                <input type="search" placeholder="Поиск по задачам..." name="query"/>
+            </form>
+            <a href="/logout">
+                <span>Выйти</span>
+            </a>
+        </div>
+        <hr>
+    </header>
+
+    <div>
+        <a th:href="@{|/tasks?qualifier=my|}">
+            <span th:text="|Мои задачи|"></span>
+        </a>
+        <a th:href="@{|/tasks?qualifier=fromme|}">
+            <span th:text="|Задачи от меня|"></span>
+        </a>
+        <a th:href="@{|/tasks|}">
+            <span th:text="|Все задачи|"></span>
+        </a>
+    </div>
+
+    <div>
+        <a th:href="@{|/tasks/create|}">
+            <span th:text="|Создать задачу|"></span>
+        </a>
+    </div>
+
+    <ul th:each="task : ${tasks.getContent()}">
+        <li>
+            <a th:href="@{|/tasks/get/${task.getTaskId()}|}">
+                <span th:text="${task.getName()}"></span>
+            </a>
+        </li>
+    </ul>
+
+
+    <div>
+        <a th:if="${page.intValue() > 1}" th:href="@{|/tasks?query=${query}&page=${page - 1}&qualifier=${qualifier}|}">
+            <span th:text="|previous|"></span>
+        </a>
+        <a>
+            <span th:text="${page}"></span>
+        </a>
+        <a th:if="${page.intValue() < tasks.getTotalPages()}" th:href="@{|/tasks?query=${query}&page=${page + 1}&qualifier=${qualifier}|}">
+            <span th:text="|next|"></span>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ALTER TABLE tasks RENAME COLUMN for_department TO for_user;

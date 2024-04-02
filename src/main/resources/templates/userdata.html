@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>People</title>
+</head>
+<body>
+<header>
+    <div>
+        <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+            <span th:text="|Профиль|"></span>
+        </a>
+        <a th:href="@{/}">
+            <span th:text="|Лента|"></span>
+        </a>
+        <a th:href="@{|/tasks|}">
+            <span th:text="|Задачи|"></span>
+        </a>
+        <a th:href="@{|/users|}">
+            <span th:text="|Сотрудники|"></span>
+        </a>
+        <a th:href="@{|/departments|}">
+            <span th:text="|Отделы|"></span>
+        </a>
+        <a th:href="@{|/files|}">
+            <span th:text="|Файлы|"></span>
+        </a>
+        <form method="get" action="/users">
+            <input type="search" placeholder="Поиск по компании..." name="query"/>
+        </form>
+        <a href="/logout">
+            <span>Выйти</span>
+        </a>
+    </div>
+    <hr>
+</header>
+
+<form method="post" th:object="${newUser}">
+    <label th:if="${tocreate} != null">
+        <input type="hidden" name="username" th:value="${email}"/>
+    </label>
+    <label th:unless="${tocreate} != null"> Почта
+         <input type="email" name="username" th:value="${email}" required/>
+    </label>
+    <label> Имя
+         <input th:value="${tocreate} != null ? ${tocreate.getFirstName()} : null" type="text" name="firstName" required/>
+    </label>
+    <label> Фамилия
+        <input th:value="${tocreate} != null ? ${tocreate.getLastName()} : null" type="text" name="lastName" required/>
+    </label>
+    <label> Отчество
+        <input th:value="${tocreate} != null ? ${tocreate.getFatherName()} : null" type="text" name="fatherName"/>
+    </label>
+    <label> Номер телефона в формате (xxx)xxx-xx-xx
+        <input type="tel" name="phoneNumber" th:value="${tocreate} != null ? ${tocreate.getPhoneNumber().substring(2)} : null" pattern="[0-9]{10}" required>
+    </label>
+    <label> Отдел
+        <select name="departmentName">
+            <option th:each="depart : ${departments}" th:selected="${tocreate} != null and ${tocreate.getDepartmentName().equals(depart)}"
+                    th:value="${depart.getName()}" th:text="${depart.getName()}"></option>
+        </select>
+    </label>
+    <label> Должность
+        <input th:value="${tocreate} != null ? ${tocreate.getRole()} : null" type="text" name="role" required/>
+    </label>
+    <label> Дата рождения
+        <input type="date" th:value="${tocreate} != null ? ${tocreate.getBirthDate()} : null" name="birthDate" required>
+    </label>
+    <label> Установить администратором
+        <input type="checkbox" name="isAdmin">
+    </label>
+    <input type="submit" value="Создать/обновить" />
+</form>
+
+</body>
+</html>

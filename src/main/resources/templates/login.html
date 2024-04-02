@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div>
+    <form name="f" th:action="@{/login}" method="post">
+        <fieldset>
+            <legend>Войдите в систему</legend>
+            <div th:if="${param.error}">
+                Неверные имя пользователя или пароль.
+            </div>
+            <div th:if="${param.logout}">
+                Вы вышли из аккаунта.
+            </div>
+            <div th:if="${param.recovered}">
+                Новый пароль был отправлен Вам на почту.
+            </div>
+            <label for="username">Email</label>
+            <input type="text" id="username" name="username"/>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password"/>
+            <div>
+                <button type="submit">Войти</button>
+            </div>
+        </fieldset>
+    </form>
+    <a th:href="@{/recover}">
+        <span>Восстановить пароль</span>
+    </a>
+</div>
+</body>
+</html>

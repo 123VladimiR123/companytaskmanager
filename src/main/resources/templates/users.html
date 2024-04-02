@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>People</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+        <span th:text="|Профиль|"></span>
+      </a>
+      <a th:href="@{/}">
+        <span th:text="|Лента|"></span>
+      </a>
+      <a th:href="@{|/tasks|}">
+        <span th:text="|Задачи|"></span>
+      </a>
+      <a th:href="@{|/users|}">
+        <span th:text="|Сотрудники|"></span>
+      </a>
+      <a th:href="@{|/departments|}">
+        <span th:text="|Отделы|"></span>
+      </a>
+      <a th:href="@{|/files|}">
+        <span th:text="|Файлы|"></span>
+      </a>
+      <form method="get">
+        <input type="search" placeholder="Поиск по компании..." name="query"/>
+      </form>
+      <a href="/logout">
+        <span>Выйти</span>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+  <a th:if="${isAdmin}" th:href="@{|/users/create|}">
+    <span th:text="|Создать/обновить пользователя|"></span>
+  </a>
+
+  <div>
+    <ul th:each="entity : ${list.getContent()}">
+      <li>
+        <a th:href="@{|profile?first=${entity.getFirstName()}&last=${entity.getLastName()}&father=${entity.getFatherName()}|}">
+          <span th:text="|${entity.getLastName()} ${entity.getFirstName()} ${entity.getFatherName()}|"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <a th:if="${page > 1}" th:href="@{|/users?query=${query}&page=${page - 1}|}">
+      <span th:text="|previous|"></span>
+    </a>
+    <a>
+      <span th:text="${page}"></span>
+    </a>
+    <a th:if="${page < list.getTotalPages()}" th:href="@{|/users?query=${query}&page=${page + 1}|}">
+      <span th:text="|next|"></span>
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ALTER TABLE departments ADD FOREIGN KEY (main_user) REFERENCES users(username);

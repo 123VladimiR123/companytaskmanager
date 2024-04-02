@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Create task</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+        <span th:text="|Профиль|"></span>
+      </a>
+      <a th:href="@{/}">
+        <span th:text="|Лента|"></span>
+      </a>
+      <a th:href="@{|/tasks|}">
+        <span th:text="|Задачи|"></span>
+      </a>
+      <a th:href="@{|/users|}">
+        <span th:text="|Сотрудники|"></span>
+      </a>
+      <a th:href="@{|/departments|}">
+        <span th:text="|Отделы|"></span>
+      </a>
+      <a th:href="@{|/files|}">
+        <span th:text="|Файлы|"></span>
+      </a>
+      <a href="/logout">
+        <span>Выйти</span>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+  <div>
+    <form method="post" enctype="multipart/form-data">
+      <input type="text" th:name="name" placeholder="Название" required/>
+      <input type="text" th:name="message" placeholder="Описание задачи" required/>
+      <input type="file" th:name="files" multiple/>
+      <select name="owner" required>
+        <option value="" disabled selected hidden="hidden" th:text="|Выберите ответственного|"></option>
+        <option th:each="user : ${list}" th:value="${user.getUsername()}" th:text="|${user.getLastName()} ${user.getFirstName()} ${user.getFatherName()}|"></option>
+      </select>
+      <label>
+        <input type="submit"/>
+      </label>
+    </form>
+  </div>
+
+</body>
+</html>

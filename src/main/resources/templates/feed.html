@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Feed</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+                <span th:text="|Профиль|"></span>
+            </a>
+            <a th:href="@{/}">
+                <span th:text="|Лента|"></span>
+            </a>
+            <a th:href="@{|/tasks|}">
+                <span th:text="|Задачи|"></span>
+            </a>
+            <a th:href="@{|/users|}">
+                <span th:text="|Сотрудники|"></span>
+            </a>
+            <a th:href="@{|/departments|}">
+                <span th:text="|Отделы|"></span>
+            </a>
+            <a th:href="@{|/files|}">
+                <span th:text="|Файлы|"></span>
+            </a>
+            <form method="get">
+                <input type="search" placeholder="Поиск в ленте..." name="query"/>
+            </form>
+            <a href="/logout">
+                <span>Выйти</span>
+            </a>
+        </div>
+        <hr>
+    </header>
+
+    <div>
+        <a th:href="@{|/post/create|}">
+            <span th:text="|Создать новый пост|"></span>
+        </a>
+    </div>
+
+    <ul th:each="post : ${posts.getContent()}">
+        <li>
+            <b>
+                <a th:href="@{|profile?first=${post.getFromUser().getFirstName()}&last=${post.getFromUser().getLastName()}&father=${post.getFromUser().getFatherName()}|}">
+                   <span th:text="|${post.getFromUser().getLastName()} ${post.getFromUser().getFirstName()}|"/>
+                </a>
+            </b>
+            <span th:text="${post.getPublished()}"></span>
+            <span th:text="${post.getMessage()}"/>
+            <ul th:each="attach : ${post.getAttachmentEntitySet()}">
+                <li>
+                    <a th:href="@{|download?path=${attach.getPath()}|}" target="_blank">
+                        <span th:text="${attach.getName()}"></span>
+                    </a>
+                </li>
+            </ul>
+
+
+            <div>
+                <a th:href="@{|/post/${post.getPostId()}|}" th:if="${post.getCommentsPreview().getTotalElements()} > 3">
+                    <span th:text="|Посмотреть все комментарии (${post.getCommentsPreview().getTotalElements()})|"></span>
+                </a>
+                <ul th:each="comment : ${post.getCommentsPreview().getContent().reversed()}">
+                    <li>
+                        <b>
+                            <a th:href="@{|profile?first=${comment.getFromUser().getFirstName()}&last=${comment.getFromUser().getLastName()}&father=${comment.getFromUser().getFatherName()}|}">
+                                <span th:text="|${comment.getFromUser().getLastName()} ${comment.getFromUser().getFirstName()}|"/>
+                            </a>
+                        </b>
+                        <span th:text="${comment.getPublished()}"></span>
+                        <span th:text="${comment.getMessage()}"></span>
+                        <ul th:each="attach : ${comment.getAttachmentEntitySet()}">
+                            <li>
+                                <a th:href="@{|download?path=${attach.getPath()}|}" target="_blank">
+                                    <span th:text="${attach.getName()}"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <form method="post" enctype="multipart/form-data">
+                <input type="hidden" th:value="${post.getPostId()}" th:name="postid" />
+                <input type="hidden" th:value="${query}" th:name="query"/>
+                <input type="hidden" th:value="${page}" th:name="page"/>
+                <input type="text" placeholder="Оставьте свой комментарий..." th:name="message" required/>
+                <input type="file" th:name="files" multiple />
+                <input type="submit"/>
+            </form>
+        </li>
+    </ul>
+
+    <div>
+        <a th:if="${page.intValue() > 1}" th:href="@{|/?query=${query}&page=${page - 1}|}">
+            <span th:text="|previous|"></span>
+        </a>
+        <a>
+            <span th:text="${page}"></span>
+        </a>
+        <a th:if="${page.intValue() < posts.getTotalPages()}" th:href="@{|/?query=${query}&page=${page + 1}|}">
+            <span th:text="|next|"></span>
+        </a>
+    </div>
+</body>
+</html>

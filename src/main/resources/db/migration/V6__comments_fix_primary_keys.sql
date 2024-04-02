@@ -1,0 +1,2 @@
+ALTER TABLE comments DROP PRIMARY KEY;
+ALTER TABLE comments ADD PRIMARY KEY (comment_id);

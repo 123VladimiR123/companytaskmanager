@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Company files</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+                <span th:text="|Профиль|"></span>
+            </a>
+            <a th:href="@{/}">
+                <span th:text="|Лента|"></span>
+            </a>
+            <a th:href="@{|/tasks|}">
+                <span th:text="|Задачи|"></span>
+            </a>
+            <a th:href="@{|/users|}">
+                <span th:text="|Сотрудники|"></span>
+            </a>
+            <a th:href="@{|/departments|}">
+                <span th:text="|Отделы|"></span>
+            </a>
+            <a th:href="@{|/files|}">
+                <span th:text="|Файлы|"></span>
+            </a>
+            <form method="get">
+                <input type="search" placeholder="Поиск по файлам..." name="query"/>
+            </form>
+            <a href="/logout">
+                <span>Выйти</span>
+            </a>
+        </div>
+        <hr>
+    </header>
+
+
+  <ul th:each="attachment : ${attachments.getContent()}">
+    <li>
+      <a th:href="@{|download?path=${attachment.getPath()}|}" target="_blank">
+        <span th:text="${attachment.getName()}"></span>
+      </a>
+    </li>
+  </ul>
+
+    <div>
+        <a th:if="${page > 1}" th:href="@{|/files?query=${query}&page=${page - 1}|}">
+            <span th:text="|previous|"></span>
+        </a>
+        <a>
+            <span th:text="${page}"></span>
+        </a>
+        <a th:if="${page < attachments.getTotalPages()}" th:href="@{|/files?query=${query}&page=${page + 1}|}">
+            <span th:text="|next|"></span>
+        </a>
+    </div>
+</body>
+</html>

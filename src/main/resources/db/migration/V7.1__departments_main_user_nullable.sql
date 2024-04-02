@@ -1,0 +1,1 @@
+ALTER TABLE departments MODIFY main_user varchar(255);

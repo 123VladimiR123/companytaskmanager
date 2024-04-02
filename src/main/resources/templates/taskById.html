@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasks</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+        <span th:text="|Профиль|"></span>
+      </a>
+      <a th:href="@{/}">
+        <span th:text="|Лента|"></span>
+      </a>
+      <a th:href="@{|/tasks|}">
+        <span th:text="|Задачи|"></span>
+      </a>
+      <a th:href="@{|/users|}">
+        <span th:text="|Сотрудники|"></span>
+      </a>
+      <a th:href="@{|/departments|}">
+        <span th:text="|Отделы|"></span>
+      </a>
+      <a th:href="@{|/files|}">
+        <span th:text="|Файлы|"></span>
+      </a>
+      <a href="/logout">
+        <span>Выйти</span>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+  <div>
+    <b>
+      <span th:text="${task.getName()}"></span>
+    </b>
+    <span th:text="${task.getPublished()}"></span>
+    <span th:text="|Для сотрудника|"></span>
+    <a th:href="@{|profile?first=${task.getForUser().getFirstName()}&last=${task.getForUser().getLastName()}&father=${task.getForUser().getFatherName()}|}">
+      <span th:text="|${task.getForUser().getLastName()} ${task.getForUser().getFirstName()} ${task.getForUser().getFatherName()}|"></span>
+    </a>
+    <span th:if="${task.isEnabled()}" th:text="|В процессе|"></span>
+    <span th:unless="${task.isEnabled()}" th:text="|Решена|"></span>
+
+    <span th:text="${task.getMessage()}"></span>
+
+    <ul th:each="attach : ${task.getAttachmentEntitySet()}">
+      <li>
+        <a th:href="@{|download?path=${attach.getPath()}|}" target="_blank">
+          <span th:text="${attach.getName()}"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <form method="post" enctype="multipart/form-data">
+      <input type="text" placeholder="Оставьте свой комментарий..." th:name="message" required/>
+      <input type="file" th:name="files" multiple />
+      <input type="submit"/>
+    </form>
+  </div>
+
+  <div>
+    <ul th:each="comment : ${comments}">
+      <li>
+        <b>
+          <a th:href="@{|profile?first=${comment.getFromUser().getFirstName()}&last=${comment.getFromUser().getLastName()}&father=${comment.getFromUser().getFatherName()}|}">
+            <span th:text="|${comment.getFromUser().getLastName()} ${comment.getFromUser().getFirstName()}|"/>
+          </a>
+        </b>
+        <span th:text="${comment.getPublished()}"></span>
+        <span th:text="${comment.getMessage()}"></span>
+        <ul th:each="attach : ${comment.getAttachmentEntitySet()}">
+          <li>
+            <a th:href="@{|download?path=${attach.getPath()}|}" target="_blank">
+              <span th:text="${attach.getName()}"></span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

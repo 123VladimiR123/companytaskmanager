@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>People</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+        <span th:text="|Профиль|"></span>
+      </a>
+      <a th:href="@{/}">
+        <span th:text="|Лента|"></span>
+      </a>
+      <a th:href="@{|/tasks|}">
+        <span th:text="|Задачи|"></span>
+      </a>
+      <a th:href="@{|/users|}">
+        <span th:text="|Сотрудники|"></span>
+      </a>
+      <a th:href="@{|/departments|}">
+        <span th:text="|Отделы|"></span>
+      </a>
+      <a th:href="@{|/files|}">
+        <span th:text="|Файлы|"></span>
+      </a>
+      <form method="get" action="/users">
+        <input type="search" placeholder="Поиск по компании..." name="query"/>
+      </form>
+      <a href="/logout">
+        <span>Выйти</span>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+
+  <div>
+    <form th:method="patch">
+      <input type="email" name="email" placeholder="Введите почту пользователя"/>
+      <input type="submit" th:value="|Загрузить данные|" />
+    </form>
+  </div>
+</body>
+</html>

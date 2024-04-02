@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+                <span th:text="|Профиль|"></span>
+            </a>
+            <a th:href="@{/}">
+                <span th:text="|Лента|"></span>
+            </a>
+            <a th:href="@{|/tasks|}">
+                <span th:text="|Задачи|"></span>
+            </a>
+            <a th:href="@{|/users|}">
+                <span th:text="|Сотрудники|"></span>
+            </a>
+            <a th:href="@{|/departments|}">
+                <span th:text="|Отделы|"></span>
+            </a>
+            <a th:href="@{|/files|}">
+                <span th:text="|Файлы|"></span>
+            </a>
+            <a href="/logout">
+                <span>Выйти</span>
+            </a>
+        </div>
+        <hr>
+    </header>
+
+
+    <div>
+        <img alt="Your Anonimus Photo :3"
+             th:if="${userRequested.getIconPath() == null}" th:src="@{/images/unknown.jpg}"/>
+        <img alt="Your Beautiful Photo :3"
+             th:unless="${userRequested.getIconPath() == null}" th:src="|/images/${userRequested.getIconPath()}|"/>
+        <form>
+            <label>Почта:
+                <input disabled th:value="${userRequested.getUsername()}" type="text">
+            </label>
+            <label>Имя:
+                <input disabled th:value="${userRequested.getFirstName()}" type="text"/>
+            </label>
+            <label>Фамилия:
+                <input disabled th:value="${userRequested.getLastName()}" type="text"/>
+            </label>
+            <label>Отчество:
+                <input disabled th:value="${userRequested.getFatherName()}" type="text"/>
+            </label>
+            <label>Номер телефона:
+                <input disabled th:placeholder="${userRequested.getPhoneNumber()}" type="tel"/>
+            </label>
+            <label>Дата рождения:
+                <input disabled th:placeholder="${#dates.format(userRequested.getBirthDate(), 'dd.MM.yyyy')}" type="text"/>
+            </label>
+            <label th:if="${userRequested.getDepartmentName() != null}">Отдел:
+                <input disabled th:placeholder="${userRequested.getDepartmentName().getName()}" type="text" name="${user.getDepartmentName().getName()}" />
+            </label>
+            <label>Должность:
+                <input disabled th:placeholder="${userRequested.getRole()}" type="text"/>
+            </label>
+        </form>
+
+        <form th:if="${!isSelf && isAdmin}" th:method="PATCH">
+            <input type="hidden" th:value="${userRequested.getLastName()}" name="lastName"/>
+            <input type="hidden" th:value="${userRequested.getFirstName()}" name="firstName"/>
+            <input type="hidden" th:value="${userRequested.getFatherName()}" name="fatherName"/>
+            <input type="submit" value="Сделать ответственным за отдел"/>
+        </form>
+        <form th:if="${!isSelf && isAdmin}" th:method="DELETE">
+            <input type="hidden" th:value="${userRequested.getLastName()}" name="lastName"/>
+            <input type="hidden" th:value="${userRequested.getFirstName()}" name="firstName"/>
+            <input type="hidden" th:value="${userRequested.getFatherName()}" name="fatherName"/>
+            <input type="submit" value="Уволить/Восстановить"/>
+        </form>
+        <form th:if="${isSelf}" th:action="@{|/profile/email|}" method="get">
+            <input type="submit" value="Изменить почту">
+        </form>
+        <form th:if="${isSelf}" th:action="@{|/profile/password|}" method="get">
+            <input type="submit" value="Изменить пароль">
+        </form>
+        <form th:if="${isSelf}" th:action="@{|/profile/photo|}" method="get">
+            <input type="submit" value="Изменить фото профиля">
+        </form>
+    </div>
+</body>
+</html>

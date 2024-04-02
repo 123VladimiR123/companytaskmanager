@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+                <span th:text="|Профиль|"></span>
+            </a>
+            <a th:href="@{/}">
+                <span th:text="|Лента|"></span>
+            </a>
+            <a th:href="@{|/tasks|}">
+                <span th:text="|Задачи|"></span>
+            </a>
+            <a th:href="@{|/users|}">
+                <span th:text="|Сотрудники|"></span>
+            </a>
+            <a th:href="@{|/departments|}">
+                <span th:text="|Отделы|"></span>
+            </a>
+            <a th:href="@{|/files|}">
+                <span th:text="|Файлы|"></span>
+            </a>
+            <a href="/logout">
+                <span>Выйти</span>
+            </a>
+        </div>
+        <hr>
+    </header>
+
+
+<div>
+    <span th:if="${param.error}">Адреса не совпали/некорректные адреса</span>
+    <form method="post">
+        <label> Введите новую почту
+            <input type="email" name="newmail1"/>
+        </label>
+        <label> Введите новую почту еще раз
+            <input type="email" name="newmail2"/>
+        </label>
+        <input type="submit" value="Отправить"/>
+    </form>
+</div>
+
+</body>
+</html>

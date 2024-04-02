@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Create department</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+        <span th:text="|Профиль|"></span>
+      </a>
+      <a th:href="@{/}">
+        <span th:text="|Лента|"></span>
+      </a>
+      <a th:href="@{|/tasks|}">
+        <span th:text="|Задачи|"></span>
+      </a>
+      <a th:href="@{|/users|}">
+        <span th:text="|Сотрудники|"></span>
+      </a>
+      <a th:href="@{|/departments|}">
+        <span th:text="|Отделы|"></span>
+      </a>
+      <a th:href="@{|/files|}">
+        <span th:text="|Файлы|"></span>
+      </a>
+      <form method="get">
+        <input type="search" placeholder="Поиск по отделам..." name="query"/>
+      </form>
+      <a href="/logout">
+        <span>Выйти</span>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+  <form method="post">
+    <label>Введите название отдела
+      <input type="text" name="name" required/>
+    </label>
+    <select name="owner">
+      <option value="">Выберите управляющий отдел</option>
+      <option th:each="depart : ${departments}" th:value="${depart.getName()}" th:text="${depart.getName()}"></option>
+    </select>
+    <input type="submit" value="Создать/изменить" />
+  </form>
+
+
+</body>
+</html>

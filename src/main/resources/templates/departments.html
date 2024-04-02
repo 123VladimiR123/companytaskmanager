@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Departments</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+        <span th:text="|Профиль|"></span>
+      </a>
+      <a th:href="@{/}">
+        <span th:text="|Лента|"></span>
+      </a>
+      <a th:href="@{|/tasks|}">
+        <span th:text="|Задачи|"></span>
+      </a>
+      <a th:href="@{|/users|}">
+        <span th:text="|Сотрудники|"></span>
+      </a>
+      <a th:href="@{|/departments|}">
+        <span th:text="|Отделы|"></span>
+      </a>
+      <a th:href="@{|/files|}">
+        <span th:text="|Файлы|"></span>
+      </a>
+      <form method="get">
+        <input type="search" placeholder="Поиск по отделам..." name="query"/>
+      </form>
+      <a href="/logout">
+        <span>Выйти</span>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+  <a th:if="${isAdmin}" href="/departments/create">
+    <span>Создать или изменить отдел</span>
+  </a>
+
+
+  <ul th:each="depart : ${departments.getContent()}">
+    <li>
+      <span th:text="${depart.getName()}"></span>
+      <span th:if="${depart.getDepartmentHigher() != null}" th:text="|В подчинении ${depart.getDepartmentHigher().getName()}|"></span>
+
+      <span th:if="${depart.getMainUser() != null}" th:text="|Ответственный |"></span>
+      <a th:if="${depart.getMainUser() != null}" th:href="@{|profile?first=${depart.getMainUser().getFirstName()}&last=${depart.getMainUser().getLastName()}&father=${depart.getMainUser().getFatherName()}|}">
+        <span th:text="|${depart.getMainUser().getLastName()} ${depart.getMainUser().getFirstName()} ${depart.getMainUser().getFatherName()}|"></span>
+      </a>
+      <form th:if="${isAdmin}" method="post">
+        <input type="hidden" th:value="|${depart.getName()}|" th:name="name"/>
+        <input type="submit" value="Расформировать" th:if="${depart.isEnabled()}"/>
+        <input type="submit" value="Восстановить" th:unless="${depart.isEnabled()}" />
+      </form>
+    </li>
+  </ul>
+
+
+  <div>
+    <a th:if="${page.intValue() > 1}" th:href="@{|/departments?query=${query}&page=${page - 1}|}">
+      <span th:text="|previous|"></span>
+    </a>
+    <a>
+      <span th:text="${page}"></span>
+    </a>
+    <a th:if="${page.intValue() < departments.getTotalPages()}" th:href="@{|/departments?query=${query}&page=${page + 1}|}">
+      <span th:text="|next|"></span>
+    </a>
+  </div>
+</body>
+</html>

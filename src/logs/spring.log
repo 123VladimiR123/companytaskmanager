@@ -1,0 +1,420 @@
+2024-01-23T03:37:51.056+03:00  INFO 692 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 692 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T03:37:51.066+03:00  INFO 692 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T03:37:51.105+03:00  INFO 692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T03:37:51.106+03:00  INFO 692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T03:37:52.048+03:00  INFO 692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T03:37:52.107+03:00  INFO 692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 13 JPA repository interfaces.
+2024-01-23T03:37:52.999+03:00  INFO 692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T03:37:53.012+03:00  INFO 692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T03:37:53.013+03:00  INFO 692 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T03:37:53.069+03:00  INFO 692 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T03:37:53.070+03:00  INFO 692 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1963 ms
+2024-01-23T03:37:53.793+03:00  INFO 692 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T03:37:53.793+03:00  INFO 692 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T03:37:53.794+03:00  INFO 692 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T03:37:53.831+03:00  INFO 692 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T03:37:53.892+03:00  INFO 692 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.041s)
+2024-01-23T03:37:53.908+03:00  INFO 692 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T03:37:53.912+03:00  INFO 692 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T03:37:54.044+03:00  INFO 692 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T03:37:54.094+03:00  INFO 692 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T03:37:54.121+03:00  INFO 692 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T03:37:54.324+03:00  INFO 692 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T03:37:54.349+03:00  INFO 692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T03:37:54.376+03:00  INFO 692 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78563371
+2024-01-23T03:37:54.378+03:00  INFO 692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T03:37:55.481+03:00  INFO 692 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T03:37:55.513+03:00  INFO 692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:37:55.933+03:00  INFO 692 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T03:37:55.988+03:00  INFO 692 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T03:37:56.603+03:00  WARN 692 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T03:37:57.214+03:00  INFO 692 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T03:37:57.305+03:00  INFO 692 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51545ff9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@376fe77d, org.springframework.security.web.context.SecurityContextHolderFilter@24dbff17, org.springframework.security.web.header.HeaderWriterFilter@4a52f077, org.springframework.web.filter.CorsFilter@db39154, org.springframework.security.web.authentication.logout.LogoutFilter@46455058, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@42d63248, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@73073da4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d2350b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26fb598f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a01bb3d, org.springframework.security.web.access.ExceptionTranslationFilter@18d8b80f, org.springframework.security.web.access.intercept.AuthorizationFilter@4ff7c117]
+2024-01-23T03:37:57.981+03:00  INFO 692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T03:37:58.062+03:00  INFO 692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T03:37:58.074+03:00  INFO 692 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 7.392 seconds (process running for 8.131)
+2024-01-23T03:37:58.583+03:00  INFO 692 --- [RMI TCP Connection(3)-192.168.1.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T03:37:58.583+03:00  INFO 692 --- [RMI TCP Connection(3)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T03:37:58.585+03:00  INFO 692 --- [RMI TCP Connection(3)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-23T03:42:20.846+03:00  INFO 692 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:42:20.850+03:00  INFO 692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T03:42:20.856+03:00  INFO 692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-23T03:42:24.232+03:00  INFO 7828 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 7828 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T03:42:24.234+03:00  INFO 7828 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T03:42:24.280+03:00  INFO 7828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T03:42:24.280+03:00  INFO 7828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T03:42:25.301+03:00  INFO 7828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T03:42:25.369+03:00  INFO 7828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 13 JPA repository interfaces.
+2024-01-23T03:42:26.276+03:00  INFO 7828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T03:42:26.287+03:00  INFO 7828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T03:42:26.288+03:00  INFO 7828 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T03:42:26.346+03:00  INFO 7828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T03:42:26.346+03:00  INFO 7828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2065 ms
+2024-01-23T03:42:27.058+03:00  INFO 7828 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T03:42:27.058+03:00  INFO 7828 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T03:42:27.058+03:00  INFO 7828 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T03:42:27.093+03:00  INFO 7828 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T03:42:27.156+03:00  INFO 7828 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.042s)
+2024-01-23T03:42:27.172+03:00  INFO 7828 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T03:42:27.176+03:00  INFO 7828 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T03:42:27.298+03:00  INFO 7828 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T03:42:27.356+03:00  INFO 7828 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T03:42:27.385+03:00  INFO 7828 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T03:42:27.600+03:00  INFO 7828 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T03:42:27.629+03:00  INFO 7828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T03:42:27.659+03:00  INFO 7828 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15d430ec
+2024-01-23T03:42:27.662+03:00  INFO 7828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T03:42:28.753+03:00  INFO 7828 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T03:42:28.783+03:00  INFO 7828 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:42:29.180+03:00  INFO 7828 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T03:42:29.227+03:00  INFO 7828 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T03:42:29.864+03:00  WARN 7828 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T03:42:30.446+03:00  INFO 7828 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T03:42:30.539+03:00  INFO 7828 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ebec1f3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ff8d772, org.springframework.security.web.context.SecurityContextHolderFilter@afe763d, org.springframework.security.web.header.HeaderWriterFilter@1130c16a, org.springframework.web.filter.CorsFilter@2a8fc6f4, org.springframework.security.web.authentication.logout.LogoutFilter@2e604bc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@682787be, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4eab3309, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67c3d43a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ee8663c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a5b9d48, org.springframework.security.web.access.ExceptionTranslationFilter@15b3ec49, org.springframework.security.web.access.intercept.AuthorizationFilter@3cda83df]
+2024-01-23T03:42:31.207+03:00  INFO 7828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T03:42:31.284+03:00  INFO 7828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T03:42:31.297+03:00  INFO 7828 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 7.433 seconds (process running for 8.103)
+2024-01-23T03:42:31.547+03:00  INFO 7828 --- [RMI TCP Connection(2)-192.168.1.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T03:42:31.548+03:00  INFO 7828 --- [RMI TCP Connection(2)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T03:42:31.550+03:00  INFO 7828 --- [RMI TCP Connection(2)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-23T03:45:01.473+03:00  INFO 7828 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:45:01.475+03:00  INFO 7828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T03:45:01.481+03:00  INFO 7828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-23T03:45:04.954+03:00  INFO 1428 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 1428 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T03:45:04.957+03:00  INFO 1428 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T03:45:04.996+03:00  INFO 1428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T03:45:04.996+03:00  INFO 1428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T03:45:06.002+03:00  INFO 1428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T03:45:06.071+03:00  INFO 1428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 13 JPA repository interfaces.
+2024-01-23T03:45:07.006+03:00  INFO 1428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T03:45:07.019+03:00  INFO 1428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T03:45:07.019+03:00  INFO 1428 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T03:45:07.074+03:00  INFO 1428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T03:45:07.075+03:00  INFO 1428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2078 ms
+2024-01-23T03:45:07.785+03:00  INFO 1428 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T03:45:07.785+03:00  INFO 1428 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T03:45:07.785+03:00  INFO 1428 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T03:45:07.819+03:00  INFO 1428 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T03:45:07.874+03:00  INFO 1428 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.037s)
+2024-01-23T03:45:07.890+03:00  INFO 1428 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T03:45:07.893+03:00  INFO 1428 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T03:45:08.041+03:00  INFO 1428 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T03:45:08.101+03:00  INFO 1428 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T03:45:08.132+03:00  INFO 1428 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T03:45:08.331+03:00  INFO 1428 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T03:45:08.356+03:00  INFO 1428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T03:45:08.393+03:00  INFO 1428 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6880ab10
+2024-01-23T03:45:08.395+03:00  INFO 1428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T03:45:09.492+03:00  INFO 1428 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T03:45:09.529+03:00  INFO 1428 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:45:09.965+03:00  INFO 1428 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T03:45:10.015+03:00  INFO 1428 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T03:45:10.687+03:00  WARN 1428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T03:45:11.305+03:00  INFO 1428 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T03:45:11.409+03:00  INFO 1428 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1248d2b4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f60c72d, org.springframework.security.web.context.SecurityContextHolderFilter@6ac05b5c, org.springframework.security.web.header.HeaderWriterFilter@79d3bc3, org.springframework.web.filter.CorsFilter@33ea7391, org.springframework.security.web.authentication.logout.LogoutFilter@318b7de9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c210ff7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@641c8ea9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ca6d3e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a3f76a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42c31e6e, org.springframework.security.web.access.ExceptionTranslationFilter@37b9aaa, org.springframework.security.web.access.intercept.AuthorizationFilter@4ba6a3ef]
+2024-01-23T03:45:12.081+03:00  INFO 1428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T03:45:12.168+03:00  INFO 1428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T03:45:12.181+03:00  INFO 1428 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 7.591 seconds (process running for 8.232)
+2024-01-23T03:45:12.804+03:00  INFO 1428 --- [RMI TCP Connection(1)-192.168.1.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T03:45:12.804+03:00  INFO 1428 --- [RMI TCP Connection(1)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T03:45:12.807+03:00  INFO 1428 --- [RMI TCP Connection(1)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-23T03:48:36.605+03:00  INFO 1428 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:48:36.609+03:00  INFO 1428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T03:48:36.614+03:00  INFO 1428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-23T03:48:41.454+03:00  INFO 5976 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 5976 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T03:48:41.455+03:00  INFO 5976 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T03:48:41.494+03:00  INFO 5976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T03:48:41.494+03:00  INFO 5976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T03:48:42.434+03:00  INFO 5976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T03:48:42.503+03:00  INFO 5976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 13 JPA repository interfaces.
+2024-01-23T03:48:43.355+03:00  INFO 5976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T03:48:43.367+03:00  INFO 5976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T03:48:43.368+03:00  INFO 5976 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T03:48:43.412+03:00  INFO 5976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T03:48:43.412+03:00  INFO 5976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1917 ms
+2024-01-23T03:48:44.180+03:00  INFO 5976 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T03:48:44.180+03:00  INFO 5976 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T03:48:44.180+03:00  INFO 5976 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T03:48:44.213+03:00  INFO 5976 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T03:48:44.266+03:00  INFO 5976 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.035s)
+2024-01-23T03:48:44.280+03:00  INFO 5976 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T03:48:44.283+03:00  INFO 5976 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T03:48:44.403+03:00  INFO 5976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T03:48:44.463+03:00  INFO 5976 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T03:48:44.491+03:00  INFO 5976 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T03:48:44.693+03:00  INFO 5976 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T03:48:44.716+03:00  INFO 5976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T03:48:44.747+03:00  INFO 5976 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10fd1111
+2024-01-23T03:48:44.749+03:00  INFO 5976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T03:48:45.895+03:00  INFO 5976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T03:48:45.929+03:00  INFO 5976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:48:46.353+03:00  INFO 5976 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T03:48:46.399+03:00  INFO 5976 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T03:48:47.088+03:00  WARN 5976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T03:48:47.710+03:00  INFO 5976 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T03:48:47.806+03:00  INFO 5976 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@799d4ea0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dc7b13c, org.springframework.security.web.context.SecurityContextHolderFilter@6f1f2548, org.springframework.security.web.header.HeaderWriterFilter@d6dec37, org.springframework.web.filter.CorsFilter@efa4559, org.springframework.security.web.authentication.logout.LogoutFilter@764daa2b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68a4a658, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@72a3a021, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4754ec4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@164c379e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a29fef2, org.springframework.security.web.access.ExceptionTranslationFilter@b5d916a, org.springframework.security.web.access.intercept.AuthorizationFilter@3909456d]
+2024-01-23T03:48:48.463+03:00  INFO 5976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T03:48:48.545+03:00  INFO 5976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T03:48:48.559+03:00  INFO 5976 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 7.474 seconds (process running for 8.114)
+2024-01-23T03:48:48.774+03:00  INFO 5976 --- [RMI TCP Connection(2)-192.168.1.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T03:48:48.774+03:00  INFO 5976 --- [RMI TCP Connection(2)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T03:48:48.776+03:00  INFO 5976 --- [RMI TCP Connection(2)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-23T03:49:55.284+03:00  INFO 5976 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:49:55.287+03:00  INFO 5976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T03:49:55.294+03:00  INFO 5976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-23T03:54:50.119+03:00  INFO 4680 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 4680 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T03:54:50.121+03:00  INFO 4680 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T03:54:50.158+03:00  INFO 4680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T03:54:50.158+03:00  INFO 4680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T03:54:51.134+03:00  INFO 4680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T03:54:51.197+03:00  INFO 4680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 13 JPA repository interfaces.
+2024-01-23T03:54:52.108+03:00  INFO 4680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T03:54:52.119+03:00  INFO 4680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T03:54:52.120+03:00  INFO 4680 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T03:54:52.163+03:00  INFO 4680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T03:54:52.163+03:00  INFO 4680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2004 ms
+2024-01-23T03:54:52.910+03:00  INFO 4680 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T03:54:52.910+03:00  INFO 4680 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T03:54:52.910+03:00  INFO 4680 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T03:54:52.946+03:00  INFO 4680 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T03:54:53.009+03:00  INFO 4680 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.040s)
+2024-01-23T03:54:53.026+03:00  INFO 4680 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T03:54:53.029+03:00  INFO 4680 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T03:54:53.148+03:00  INFO 4680 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T03:54:53.202+03:00  INFO 4680 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T03:54:53.232+03:00  INFO 4680 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T03:54:53.426+03:00  INFO 4680 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T03:54:53.447+03:00  INFO 4680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T03:54:53.476+03:00  INFO 4680 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ef59bb
+2024-01-23T03:54:53.478+03:00  INFO 4680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T03:54:54.532+03:00  INFO 4680 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T03:54:54.573+03:00  INFO 4680 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:54:54.977+03:00  INFO 4680 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T03:54:55.024+03:00  INFO 4680 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T03:54:55.661+03:00  WARN 4680 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T03:54:56.317+03:00  INFO 4680 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T03:54:56.413+03:00  INFO 4680 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10ca354c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38561fb, org.springframework.security.web.context.SecurityContextHolderFilter@14900bf, org.springframework.security.web.header.HeaderWriterFilter@8550596, org.springframework.web.filter.CorsFilter@40acb979, org.springframework.security.web.authentication.logout.LogoutFilter@400e917f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d924833, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@184c7ead, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28365fdb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7416e9c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6dd24f65, org.springframework.security.web.access.ExceptionTranslationFilter@2586933, org.springframework.security.web.access.intercept.AuthorizationFilter@1b08b1cf]
+2024-01-23T03:54:57.102+03:00  INFO 4680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T03:54:57.194+03:00  INFO 4680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T03:54:57.208+03:00  INFO 4680 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 7.468 seconds (process running for 8.219)
+2024-01-23T03:54:57.557+03:00  INFO 4680 --- [RMI TCP Connection(1)-192.168.1.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T03:54:57.558+03:00  INFO 4680 --- [RMI TCP Connection(1)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T03:54:57.560+03:00  INFO 4680 --- [RMI TCP Connection(1)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-23T03:57:06.768+03:00  INFO 4680 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:57:06.775+03:00  INFO 4680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T03:57:06.782+03:00  INFO 4680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-23T03:57:10.285+03:00  INFO 1872 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 1872 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T03:57:10.286+03:00  INFO 1872 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T03:57:10.336+03:00  INFO 1872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T03:57:10.336+03:00  INFO 1872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T03:57:11.301+03:00  INFO 1872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T03:57:11.368+03:00  INFO 1872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 13 JPA repository interfaces.
+2024-01-23T03:57:12.236+03:00  INFO 1872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T03:57:12.249+03:00  INFO 1872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T03:57:12.250+03:00  INFO 1872 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T03:57:12.305+03:00  INFO 1872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T03:57:12.305+03:00  INFO 1872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1968 ms
+2024-01-23T03:57:13.008+03:00  INFO 1872 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T03:57:13.008+03:00  INFO 1872 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T03:57:13.009+03:00  INFO 1872 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T03:57:13.044+03:00  INFO 1872 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T03:57:13.100+03:00  INFO 1872 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.038s)
+2024-01-23T03:57:13.116+03:00  INFO 1872 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T03:57:13.120+03:00  INFO 1872 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T03:57:13.243+03:00  INFO 1872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T03:57:13.299+03:00  INFO 1872 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T03:57:13.326+03:00  INFO 1872 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T03:57:13.515+03:00  INFO 1872 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T03:57:13.537+03:00  INFO 1872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T03:57:13.564+03:00  INFO 1872 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d0ad0d7
+2024-01-23T03:57:13.566+03:00  INFO 1872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T03:57:14.645+03:00  INFO 1872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T03:57:14.680+03:00  INFO 1872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:57:15.088+03:00  INFO 1872 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T03:57:15.133+03:00  INFO 1872 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T03:57:15.762+03:00  WARN 1872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T03:57:16.384+03:00  INFO 1872 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T03:57:16.479+03:00  INFO 1872 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d379fd7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@166fe621, org.springframework.security.web.context.SecurityContextHolderFilter@2281ad07, org.springframework.security.web.header.HeaderWriterFilter@4dbbdd2c, org.springframework.web.filter.CorsFilter@71048055, org.springframework.security.web.authentication.logout.LogoutFilter@6b4de0d0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7839c288, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49497c5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fd035fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f0807f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d2350b2, org.springframework.security.web.access.ExceptionTranslationFilter@67837290, org.springframework.security.web.access.intercept.AuthorizationFilter@a09ac30]
+2024-01-23T03:57:17.112+03:00  INFO 1872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T03:57:17.192+03:00  INFO 1872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T03:57:17.206+03:00  INFO 1872 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 7.292 seconds (process running for 7.968)
+2024-01-23T03:57:17.580+03:00  INFO 1872 --- [RMI TCP Connection(1)-192.168.1.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T03:57:17.581+03:00  INFO 1872 --- [RMI TCP Connection(1)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T03:57:17.582+03:00  INFO 1872 --- [RMI TCP Connection(1)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-23T03:59:02.909+03:00  INFO 1872 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:59:02.912+03:00  INFO 1872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T03:59:02.918+03:00  INFO 1872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-23T03:59:06.349+03:00  INFO 3820 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 3820 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T03:59:06.350+03:00  INFO 3820 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T03:59:06.386+03:00  INFO 3820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T03:59:06.386+03:00  INFO 3820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T03:59:07.349+03:00  INFO 3820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T03:59:07.409+03:00  INFO 3820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 13 JPA repository interfaces.
+2024-01-23T03:59:08.276+03:00  INFO 3820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T03:59:08.288+03:00  INFO 3820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T03:59:08.288+03:00  INFO 3820 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T03:59:08.346+03:00  INFO 3820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T03:59:08.346+03:00  INFO 3820 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1959 ms
+2024-01-23T03:59:09.082+03:00  INFO 3820 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T03:59:09.083+03:00  INFO 3820 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T03:59:09.083+03:00  INFO 3820 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T03:59:09.119+03:00  INFO 3820 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T03:59:09.176+03:00  INFO 3820 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.041s)
+2024-01-23T03:59:09.192+03:00  INFO 3820 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T03:59:09.197+03:00  INFO 3820 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T03:59:09.321+03:00  INFO 3820 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T03:59:09.373+03:00  INFO 3820 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T03:59:09.400+03:00  INFO 3820 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T03:59:09.595+03:00  INFO 3820 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T03:59:09.618+03:00  INFO 3820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T03:59:09.647+03:00  INFO 3820 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28d3bf93
+2024-01-23T03:59:09.649+03:00  INFO 3820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T03:59:10.741+03:00  INFO 3820 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T03:59:10.774+03:00  INFO 3820 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T03:59:11.178+03:00  INFO 3820 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T03:59:11.221+03:00  INFO 3820 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T03:59:11.890+03:00  WARN 3820 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T03:59:12.508+03:00  INFO 3820 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T03:59:12.597+03:00  INFO 3820 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@579d77c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36f04237, org.springframework.security.web.context.SecurityContextHolderFilter@1978691a, org.springframework.security.web.header.HeaderWriterFilter@29773e79, org.springframework.web.filter.CorsFilter@49497c5e, org.springframework.security.web.authentication.logout.LogoutFilter@3ebdb039, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24c5e778, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@60b2be4f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56e094a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4462e440, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f5217b6, org.springframework.security.web.access.ExceptionTranslationFilter@4010ffc1, org.springframework.security.web.access.intercept.AuthorizationFilter@4b71dee7]
+2024-01-23T03:59:13.226+03:00  INFO 3820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T03:59:13.307+03:00  INFO 3820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T03:59:13.320+03:00  INFO 3820 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 7.322 seconds (process running for 7.969)
+2024-01-23T03:59:13.694+03:00  INFO 3820 --- [RMI TCP Connection(1)-192.168.1.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T03:59:13.695+03:00  INFO 3820 --- [RMI TCP Connection(1)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T03:59:13.696+03:00  INFO 3820 --- [RMI TCP Connection(1)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-23T04:01:55.840+03:00  INFO 3820 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T04:01:55.844+03:00  INFO 3820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T04:01:55.850+03:00  INFO 3820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-23T04:01:59.227+03:00  INFO 2036 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 2036 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T04:01:59.228+03:00  INFO 2036 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T04:01:59.265+03:00  INFO 2036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T04:01:59.265+03:00  INFO 2036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T04:02:00.194+03:00  INFO 2036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T04:02:00.258+03:00  INFO 2036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 13 JPA repository interfaces.
+2024-01-23T04:02:01.118+03:00  INFO 2036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T04:02:01.130+03:00  INFO 2036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T04:02:01.131+03:00  INFO 2036 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T04:02:01.183+03:00  INFO 2036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T04:02:01.183+03:00  INFO 2036 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1918 ms
+2024-01-23T04:02:01.906+03:00  INFO 2036 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T04:02:01.906+03:00  INFO 2036 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T04:02:01.906+03:00  INFO 2036 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T04:02:01.940+03:00  INFO 2036 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T04:02:02.004+03:00  INFO 2036 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.043s)
+2024-01-23T04:02:02.020+03:00  INFO 2036 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T04:02:02.023+03:00  INFO 2036 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T04:02:02.154+03:00  INFO 2036 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T04:02:02.211+03:00  INFO 2036 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T04:02:02.238+03:00  INFO 2036 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T04:02:02.433+03:00  INFO 2036 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T04:02:02.456+03:00  INFO 2036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T04:02:02.484+03:00  INFO 2036 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28d3bf93
+2024-01-23T04:02:02.486+03:00  INFO 2036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T04:02:03.600+03:00  INFO 2036 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T04:02:03.631+03:00  INFO 2036 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T04:02:04.053+03:00  INFO 2036 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T04:02:04.104+03:00  INFO 2036 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T04:02:04.826+03:00  WARN 2036 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T04:02:05.467+03:00  INFO 2036 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T04:02:05.564+03:00  INFO 2036 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f604b84, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@742d4424, org.springframework.security.web.context.SecurityContextHolderFilter@6c08634c, org.springframework.security.web.header.HeaderWriterFilter@28dd984c, org.springframework.web.filter.CorsFilter@3ebdb039, org.springframework.security.web.authentication.logout.LogoutFilter@4a72c5cd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f0807f7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@21d3dc45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@293447e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43f3c13f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3df2d8ff, org.springframework.security.web.access.ExceptionTranslationFilter@553c6daf, org.springframework.security.web.access.intercept.AuthorizationFilter@2fd035fd]
+2024-01-23T04:02:06.310+03:00  INFO 2036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T04:02:06.402+03:00  INFO 2036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T04:02:06.417+03:00  INFO 2036 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 7.537 seconds (process running for 8.175)
+2024-01-23T04:02:06.533+03:00  INFO 2036 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T04:02:06.533+03:00  INFO 2036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T04:02:06.535+03:00  INFO 2036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-23T04:02:07.039+03:00  WARN 2036 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg
+2024-01-23T04:02:07.047+03:00  WARN 2036 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg.
+2024-01-23T04:02:09.431+03:00  WARN 2036 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg
+2024-01-23T04:02:09.432+03:00  WARN 2036 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No endpoint GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg.
+2024-01-23T04:02:10.586+03:00  WARN 2036 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg
+2024-01-23T04:02:10.586+03:00  WARN 2036 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No endpoint GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg.
+2024-01-23T04:02:11.896+03:00  WARN 2036 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg
+2024-01-23T04:02:11.897+03:00  WARN 2036 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No endpoint GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg.
+2024-01-23T04:02:47.374+03:00  WARN 2036 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg
+2024-01-23T04:02:47.375+03:00  WARN 2036 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No endpoint GET /images/9e93cf37-d19d-484c-bb1c-887323a69dc3.jpg.
+2024-01-23T04:03:43.725+03:00  INFO 2036 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T04:03:43.728+03:00  INFO 2036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T04:03:43.732+03:00  INFO 2036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-23T04:06:26.446+03:00  INFO 8036 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 8036 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T04:06:26.448+03:00  INFO 8036 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T04:06:26.487+03:00  INFO 8036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T04:06:26.487+03:00  INFO 8036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T04:06:27.459+03:00  INFO 8036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T04:06:27.523+03:00  INFO 8036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 13 JPA repository interfaces.
+2024-01-23T04:06:28.424+03:00  INFO 8036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T04:06:28.436+03:00  INFO 8036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T04:06:28.436+03:00  INFO 8036 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T04:06:28.491+03:00  INFO 8036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T04:06:28.492+03:00  INFO 8036 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2003 ms
+2024-01-23T04:06:29.208+03:00  INFO 8036 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T04:06:29.209+03:00  INFO 8036 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T04:06:29.209+03:00  INFO 8036 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T04:06:29.245+03:00  INFO 8036 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T04:06:29.305+03:00  INFO 8036 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.041s)
+2024-01-23T04:06:29.321+03:00  INFO 8036 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T04:06:29.326+03:00  INFO 8036 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T04:06:29.444+03:00  INFO 8036 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T04:06:29.499+03:00  INFO 8036 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T04:06:29.526+03:00  INFO 8036 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T04:06:29.723+03:00  INFO 8036 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T04:06:29.746+03:00  INFO 8036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T04:06:29.776+03:00  INFO 8036 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f1a3dc5
+2024-01-23T04:06:29.778+03:00  INFO 8036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T04:06:30.897+03:00  INFO 8036 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T04:06:30.936+03:00  INFO 8036 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T04:06:31.389+03:00  INFO 8036 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T04:06:31.439+03:00  INFO 8036 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T04:06:32.058+03:00  WARN 8036 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T04:06:32.667+03:00  INFO 8036 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T04:06:32.764+03:00  INFO 8036 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e99c084, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@400e917f, org.springframework.security.web.context.SecurityContextHolderFilter@2386a628, org.springframework.security.web.header.HeaderWriterFilter@3d5ce050, org.springframework.web.filter.CorsFilter@2d54d5f4, org.springframework.security.web.authentication.logout.LogoutFilter@13c9a45, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1043c802, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4be3ea44, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68807a47, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b356657, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f6229a9, org.springframework.security.web.access.ExceptionTranslationFilter@54db02a0, org.springframework.security.web.access.intercept.AuthorizationFilter@265bc4f5]
+2024-01-23T04:06:33.418+03:00  INFO 8036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T04:06:33.498+03:00  INFO 8036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T04:06:33.512+03:00  INFO 8036 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 7.434 seconds (process running for 8.068)
+2024-01-23T04:06:33.787+03:00  INFO 8036 --- [RMI TCP Connection(2)-192.168.1.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T04:06:33.787+03:00  INFO 8036 --- [RMI TCP Connection(2)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T04:06:33.790+03:00  INFO 8036 --- [RMI TCP Connection(2)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-01-23T04:06:57.439+03:00  INFO 8036 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T04:06:57.443+03:00  INFO 8036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T04:06:57.450+03:00  INFO 8036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-23T04:07:01.507+03:00  INFO 7144 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Starting CompanytaskmanagerApplication using Java 21.0.1 with PID 7144 (D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager\target\classes started by Владимир in D:\Progs\IntelliJ IDEA 2023.1.3\IdeaProjects\companytaskmanager)
+2024-01-23T04:07:01.510+03:00  INFO 7144 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-23T04:07:01.591+03:00  INFO 7144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-23T04:07:01.592+03:00  INFO 7144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-23T04:07:02.602+03:00  INFO 7144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-23T04:07:02.669+03:00  INFO 7144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 13 JPA repository interfaces.
+2024-01-23T04:07:03.518+03:00  INFO 7144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-23T04:07:03.536+03:00  INFO 7144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-23T04:07:03.537+03:00  INFO 7144 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-23T04:07:03.582+03:00  INFO 7144 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-23T04:07:03.583+03:00  INFO 7144 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1991 ms
+2024-01-23T04:07:04.302+03:00  INFO 7144 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-01-23T04:07:04.302+03:00  INFO 7144 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-01-23T04:07:04.302+03:00  INFO 7144 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2024-01-23T04:07:04.339+03:00  INFO 7144 --- [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ (MySQL 8.0)
+2024-01-23T04:07:04.398+03:00  INFO 7144 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 22 migrations (execution time 00:00.039s)
+2024-01-23T04:07:04.415+03:00  INFO 7144 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `companytaskmanager`: 7.6
+2024-01-23T04:07:04.418+03:00  INFO 7144 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `companytaskmanager` is up to date. No migration necessary.
+2024-01-23T04:07:04.546+03:00  INFO 7144 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-23T04:07:04.597+03:00  INFO 7144 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23T04:07:04.624+03:00  INFO 7144 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-23T04:07:04.821+03:00  INFO 7144 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-23T04:07:04.844+03:00  INFO 7144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-23T04:07:04.877+03:00  INFO 7144 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34bbb4b7
+2024-01-23T04:07:04.879+03:00  INFO 7144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-23T04:07:06.033+03:00  INFO 7144 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23T04:07:06.070+03:00  INFO 7144 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T04:07:06.520+03:00  INFO 7144 --- [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-01-23T04:07:06.571+03:00  INFO 7144 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-23T04:07:07.218+03:00  WARN 7144 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-23T04:07:08.201+03:00  INFO 7144 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-23T04:07:08.301+03:00  INFO 7144 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62d68971, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d714c82, org.springframework.security.web.context.SecurityContextHolderFilter@719dbd2f, org.springframework.security.web.header.HeaderWriterFilter@3a832eed, org.springframework.web.filter.CorsFilter@713961f5, org.springframework.security.web.authentication.logout.LogoutFilter@6891efbc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ca0dd9d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@539391f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@789cb1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f13d69a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3817edac, org.springframework.security.web.access.ExceptionTranslationFilter@4fb62054, org.springframework.security.web.access.intercept.AuthorizationFilter@5b45347e]
+2024-01-23T04:07:09.052+03:00  INFO 7144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-23T04:07:09.150+03:00  INFO 7144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-23T04:07:09.164+03:00  INFO 7144 --- [restartedMain] c.s.c.CompanytaskmanagerApplication      : Started CompanytaskmanagerApplication in 8.14 seconds (process running for 9.328)
+2024-01-23T04:07:09.759+03:00  INFO 7144 --- [RMI TCP Connection(3)-192.168.1.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-23T04:07:09.760+03:00  INFO 7144 --- [RMI TCP Connection(3)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-23T04:07:09.761+03:00  INFO 7144 --- [RMI TCP Connection(3)-192.168.1.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-23T04:07:33.166+03:00  INFO 7144 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-23T04:07:33.170+03:00  INFO 7144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-23T04:07:33.179+03:00  INFO 7144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

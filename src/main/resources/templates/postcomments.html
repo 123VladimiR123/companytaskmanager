@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Feed</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a th:href="@{|/profile?first=${user.getFirstName()}&last=${user.getLastName()}&father=${user.getFatherName()}|}">
+        <span th:text="|Профиль|"></span>
+      </a>
+      <a th:href="@{/}">
+        <span th:text="|Лента|"></span>
+      </a>
+      <a th:href="@{|/tasks|}">
+        <span th:text="|Задачи|"></span>
+      </a>
+      <a th:href="@{|/users|}">
+        <span th:text="|Сотрудники|"></span>
+      </a>
+      <a th:href="@{|/departments|}">
+        <span th:text="|Отделы|"></span>
+      </a>
+      <a th:href="@{|/files|}">
+        <span th:text="|Файлы|"></span>
+      </a>
+      <form method="get" action="/">
+        <input type="search" placeholder="Поиск в ленте..." name="query"/>
+      </form>
+      <a href="/logout">
+        <span>Выйти</span>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+  <div>
+    <b>
+      <a th:href="@{|profile?first=${post.getFromUser().getFirstName()}&last=${post.getFromUser().getLastName()}&father=${post.getFromUser().getFatherName()}|}">
+        <span th:text="|${post.getFromUser().getLastName()} ${post.getFromUser().getFirstName()}|"/>
+      </a>
+    </b>
+    <span th:text="${post.getPublished()}"></span>
+    <span th:text="${post.getMessage()}"/>
+    <ul th:each="attach : ${post.getAttachmentEntitySet()}">
+      <li>
+        <a th:href="@{|download?path=${attach.getPath()}|}" target="_blank">
+          <span th:text="${attach.getName()}"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <ul th:each="comment : ${comments}">
+      <li>
+        <b>
+          <a th:href="@{|profile?first=${comment.getFromUser().getFirstName()}&last=${comment.getFromUser().getLastName()}&father=${comment.getFromUser().getFatherName()}|}">
+            <span th:text="|${comment.getFromUser().getLastName()} ${comment.getFromUser().getFirstName()}|"/>
+          </a>
+        </b>
+        <span th:text="${comment.getPublished()}"></span>
+        <span th:text="${comment.getMessage()}"></span>
+        <ul th:each="attach : ${comment.getAttachmentEntitySet()}">
+          <li>
+            <a th:href="@{|download?path=${attach.getPath()}|}" target="_blank">
+              <span th:text="${attach.getName()}"></span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
